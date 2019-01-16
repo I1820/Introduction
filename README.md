@@ -1,10 +1,15 @@
-# IoT101
-[![Build Status](https://travis-ci.org/I1820/Introduction.svg?branch=master)](https://travis-ci.org/I1820/Introduction)
+# Introduction to I1820 IoT Platforms
+[![Travis](https://img.shields.io/travis/com/I1820/introduction.svg?style=flat-square)](https://travis-ci.com/I1820/introduction)
 
 ## Introduction
+I1820 supports multiple interfaces and aims to provide a better way for things management.
+Its ultimate goal is to accelerate the IoT solution's development for all IoT startups and companies.
+In this introduction, we want to introduce its features and Business Plan.
 
-We start from here to build the future of I1820.
+## Presented in
+
 
 ## Special Thanks
 
-- Dr.Bakhshi
+## Selected References
+- Iman Tabrizian's IoT application center idea

@@ -1,20 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Introduction</title>
+    <title>I1820 101</title>
 
-    <link rel="stylesheet" href="css/aolab.css">
+    <link rel="icon" type="image/icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="css/share.css">
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/solarized.css">
+    <link rel="stylesheet" href="css/theme/material.css">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
-
-    <!-- Github buttons js -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <!-- Printing and PDF exports -->
     <script>
@@ -28,98 +27,71 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>
-          <img src="//i1820.github.io/logo/logo-md.png" style="height: 250px;" alt="I1820 Logo">
-          <h2>Introduction to</h2>
-          <h1>I1820</h1>
-          <h5>IoT Middleware Team</h5>
-          <h6><a href="https://aolab.github.io/">@AoLab</a></h6>
+        <section data-background-image="img/background.jpeg" data-background-opacity="0.2">
+          <h2>A Short Introduction to</h2>
+          <h1>I1820 IoT Platform</h1>
+          <h3>Parham Alvani</h3>
+          <h5><a href="https://1995parham.github.io" >@1995parham</a></h5>
         </section>
         <section>
-          <section>
-            <h1>Architecture</h1>
-          </section>
-          <section>
-            <h2>Big Picture</h2>
-            <img src="//i1820.github.io/img/architecture.png" style="height: 500px;" alt="Architecture">
-          </section>
-          <section>
-            <h2>Components</h2>
-            <ul>
-              <li>Log</li>
-              <li>Configuration</li>
-              <li>Get</li>
-              <li>Action</li>
-              <li>Trap</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Log</h2>
-            <ul>
-              <li>Log component <span class="aolab-orange">Passively</span> collects data from agents.</li>
-              <li>Agents periodically sends data</li>
-              <li>Log component stores everything into database for futher access</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Configuration</h2>
-            <ul>
-              <li>Configuration component sets parameters on agent</li>
-              <li>Settings the parameters can have side effects</li>
-            </ul>
-          </section>
+          <h2>What is an IoT platform?</h2>
+          <ul>
+            <li>An IoT platform is the middleware between the connected devices &amp; application</li>
+            <li>It is a multi-layer software which enables provisioning and management of connected devices</li>
+          </ul>
         </section>
         <section>
-          <section>
-            <h1>Information Model</h1>
-          </section>
-          <section>
-            <h2>Key Issues in Information Model</h2>
+          <h2>Where does I1820 come from?</h2>
+          <h4>I1820 is named after one of my friends who is not among us right now</h4>
+        </section>
+        <section>
+          <div class="toc"></div>
+        </section>
+        <section>
+          <div class="toc" data-selected="0"></div>
+        </section>
+        <section>
+          <ul>
+            <li>Supports multiple interface for thing communications:</li>
             <ul>
-              <li>Overall structure: Flat vs. Hierarchal</li>
-              <ul>
-                <li>Hierarchal is more powerful</li>
-              </ul>
-              <li>Object orientation</li>
-              <ul>
-                <li>Object oriented is more powerful</li>
-                <li>Inheritance?</li>
-                <li>Multiple parent? NO</li>
-              </ul>
-              <li>It is completely different from SNMP</li>
-              <ul>
-                <li>The tree shows the inheritance hierarchy</li>
-              </ul>
+              <li>HTTP</li>
+              <li>MQTT</li>
+              <li>LoRaWAN Integration through TTN</li>
+              <li>LoRaWAN Integration through loraserver.io</li>
             </ul>
-          </section>
-          <section>
-            <h2>Major Components in Management API</h2>
-            <dl>
-              <dt>Attributes (RO)</dt>
-              <dd>Fairly static properties of a modeled object</dd>
-              <dt>Statistics (RO)</dt>
-              <dd>Useful information about what a system has been doing</dd>
-              <dt>States (RO)</dt>
-              <dd>The current condition of a system</dd>
-              <dt>Settings (WO)</dt>
-              <dd>Value of system parameters</dd>
-            </dl>
-          </section>
-          <section>
-            <h2>Lamp Model in I1820</h2>
-            <pre><code data-trim data-noescape>
----
-name: lamp
-package: .standard
-
-attributes:
-  - name: vendor
-    type: string
-settings:
-  - name: on
-    type: boolean
-            </code></pre>
-          </section>
+            <li>Supports Application Integration by <span class="material-bold">OpenAPI</span></li>
+            <li><span class="material-bold">Microservice</span> Architecture</li>
+            <li>Users can define scenario to react based on events</li>
+            <li>Users can define codecs to parse their data</li>
+          </ul>
+        </section>
+        <section>
+          <div class="toc" data-selected="1"></div>
+        </section>
+        <section>
+          <h2>Platform as a Service</h2>
+          <ul>
+            <li>Prepaid Model</li>
+            <li>You pay for your sensors and actuators</li>
+            <li>You pay for your projects</li>
+            <li>APIs are here for your applications</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Joint IoT Ecosystem</h2>
+          <ul>
+            <li>Delegates their specific application to us</li>
+          </ul>
+        </section>
+        <section>
+          <h2>IoT Application Center</h2>
+          <ul>
+            <li>Connects developers to end-users</li>
+            <li>Applications are on top of the Platform</li>
+            <li>End-Users can use these applications to gain added-values</li>
+          </ul>
+        </section>
+        <section data-background-image="img/thank-you.jpeg">
         </section>
       </div>
     </div>
@@ -133,11 +105,48 @@ settings:
         controls: true,
         slideNumber: true,
 
+        margin: 0.3,
+
         // More info https://github.com/hakimel/reveal.js#dependencies
         dependencies: [
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function() {
+              if (typeof hljs !== undefined) {
+                return true;
+              } else {
+                return false;
+              }
+            },
+            callback: function() { hljs.initHighlightingOnLoad(); }
+          },
+          {
+            src: 'plugin/toc.js',
+            async: true,
+            condition: function() {
+              if (typeof toc !== undefined) {
+                return true;
+              } else {
+                return false;
+              }
+            },
+            callback: function() { toc.initToCOnLoad([
+              'I1820 Features',
+              'I1820 Business Plan',
+            ]); }
+          }
         ]
       });
     </script>
+
+    <!-- logos and advertising -->
+    <a href="https://github.com/I1820/introduction" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="img/forkme_right_orange.png" alt="Fork me on GitHub"></a>
+    <div class="demo" style="position: absolute; bottom: 16px; left: 16px; z-index: 20;">
+      <a class="demo-circle" href="https://platform.i1820.org">Live Demo</a>
+    </div>
+    <div class="share" style="position: absolute; bottom: 16px; left: 50%; margin-left: -165px; z-index: 20;">
+      <a class="share-note" href="https://i1820.github.io">Supported by I1820 Open-Source Organization</a>
+    </div>
   </body>
 </html>

@@ -1,9 +1,9 @@
 language: ruby
 rvm:
-- 2.2.5
+- 2.3.0
 
 install: gem install html-proofer
-script: htmlproofer .
+script: htmlproofer --disable-external .
 
 # branch whitelist, only for GitHub Pages
 branches:
