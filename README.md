@@ -1,4 +1,4 @@
-# Introduction to I1820 IoT Platforms
+# Introduction to I1820 IoT Platform
 [![Travis](https://img.shields.io/travis/com/I1820/introduction.svg?style=flat-square)](https://travis-ci.com/I1820/introduction)
 
 ## Introduction
